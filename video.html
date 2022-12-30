@@ -1,0 +1,128 @@
+<?php
+session_start();
+if ($_SESSION['u_type'] == "NU")
+{
+?>
+
+<html>
+<head></head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="navbarr.css">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+.parallax {
+  /* The image used */
+  background-image: url("vi.jpg");
+
+  /* Set a specific height */
+ 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+
+<body>
+<div class="parallax">
+<div class="container ">
+    <div class="row">
+        <div class="col-sm-12">
+		<div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/CBT8ujU5DTY" ></iframe>          </div>
+        </div>
+    </div>
+	
+	<div style="width:100%; font-size:2vw; font-family:Algerian ; color:white; padding-top:30; ">Importance Of Helmet And Seatbelt!</div><br>
+   
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2JjSMA2GJ9o" ></iframe></div>
+        </div>
+        <div class="col-sm-4">
+            <div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/weFu2lVuGZM" ></iframe>         </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nr7z41S6iOE" ></iframe>         </div>
+        </div>
+    </div>
+	
+	<div style="width:100%; font-size:2vw; font-family:Algerian ; color:white; padding-top:30; ">Hazards Of Drunk Driving And Distracted Driving!</div><br>
+   
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5_Oy5ulpocE" ></iframe> </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mqeXfEyyF3k" ></iframe>         </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/fHPQOWqwV88"></iframe>         </div>
+        </div>
+    </div>
+	
+    <div style="width:100%; font-size:2vw; font-family:Algerian ; color:white; padding-top:30; ">Road Traffic Rules!</div><br>
+ 
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/_NeEF1fwT4k" ></iframe>          </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9e5OGl0whYM" ></iframe>         </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="embed-responsive embed-responsive-16by9">
+<iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/CY4feYov6-4" ></iframe>    </div>
+        </div>
+
+    </div>
+	
+	<div style="width:100%; font-size:2vw; font-family:Algerian ; color:white; padding-top:30; ">How To Escape From Some Dangerous Situations After An Accident!</div><br>
+	
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fLVzvMTgGDY"></iframe>       
+            </div>
+       
+        
+        <div class="col-sm-4">
+                        <br>
+<iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/fymjbkGSta8" ></iframe> <br><br>       
+        
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ba6mOzqMxVY" ></iframe>       
+        
+        </div>
+    </div>
+	
+	
+</div>	
+
+</div>
+</div>
+
+
+</body>
+</html>
+<?php
+}
+else{
+    header("location:our_hackathon.php"); // redirect to login page!
+}
+?>

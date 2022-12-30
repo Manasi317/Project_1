@@ -1,0 +1,157 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "stylesheet" type = "text/css" href = "h.css" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</head>
+<style>
+.parallax {
+  /* The image used */
+  background-image: url("back.jpg");
+
+  /* Set a specific height */
+  min-height: 100%; 
+  opacity:0.5;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  font-size: 1.5vw;
+  
+  cursor: pointer;
+  height: 18vw;
+  width: 25vw;
+  background-color: #000066;
+  border-radius: 50%;
+}
+
+.btn:hover {
+  background-color: RoyalBlue;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+</style>
+
+<body>
+
+ <div >
+ <img src="ground.jpg" width="100%" height="750px">
+    <div id="hid" class="centered" style="width:100%; text-align:center; font-size:4VW; font-family:Algerian; "></div><br>
+</div> 
+
+<div class="parallax">
+<div align="center">
+<br><br><button class="btn" onclick="window.location.href = '#';" style="margin-right: 30vw">
+<b style="font-size:2vw "> ACTIVITY:3.1<b><br>
+<P style="font-family:Cooper Black">ROAD SAFETY QUIZ</P>
+</button>
+
+
+
+<button class="btn"  onclick="window.location.href = '#';"> 
+<b style="font-size:2vw " > ACTIVITY:3.2<b><br>
+<P style="font-family:Cooper Black">ROAD SAFETY SURVEY</P>
+
+</div>
+<br><br>
+  <div class="caption" align="center" style="background-color:black;">
+  <span class="border">Quiz and Survey helps us understand about your requirements and expectation from us!</span>
+  
+  </div>
+</div>
+</div>
+<br><br>
+
+  
+
+
+
+
+<script>
+// popovers initialization - on click
+$('[data-toggle="popover-click"]').popover({
+  html: true,
+  trigger: 'click',
+  placement: 'bottom',
+  content: function () { return '<img src="' + $(this).data('img') + '" />'; }
+});
+
+  var i = 1;
+            function func()
+            {
+                var message = "ROAD SAFETY QUIZ/SURVEY";
+                if( i <= message.length )
+                {
+                    
+                    var txt = message.substring(0,i);
+                    document.getElementById("hid").innerHTML = txt;
+                    document.getElementById("hid").style.color = "white";
+                    
+                    
+                    setTimeout("func()",200);
+                    i++;
+                }
+                
+                else{
+                    
+                    i = 1;
+                    document.getElementById("hid").innerHTML = "";
+                    setTimeout("func()",1000);
+                }
+            }
+            
+            func();
+</script>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width-device-width, initial-scale-1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <title>document</title>
+     <link rel="stylesheet" type="text/css" href="navbarr.css">
+</head>
+<body>
+
+   <div class="container">
+     <canvas id="myChart"></canvas>
+	</div>
+	<script>
+	  let myChart = document.getElementById('myChart').getContext('2d');
+
+    let massPopChart = new Chart(myChart, {
+      type:'bar',
+      data:{
+
+         labels:['Japan','Spain','Swizerland','Netherland','Denmark','United Kingdom','Sweden','Norway','Singapore','Finland'],
+         datasets:[{
+           label:'population',
+           data:[
+            3.3,
+            3.5,
+            3.6,
+            3.7,
+            3.9,
+            4.0,
+            4.2,
+            4.3,
+            4.3,
+            5.1
+          ],
+         backgroundColor:'green'
+        }]
+      },
+      options:{
+        title:{
+          display:true,
+          text:'BEST 10 PERFORMING COUNTRIES FOR YOUTH MORTALITY',
+          fontSize:20
+        },
+        legend:{
+          position:'right',
+          labels:{
+            fontColor:'black'
+          }
+        }
+      }
+    });
+	</script>
+
+</body>
+</html>

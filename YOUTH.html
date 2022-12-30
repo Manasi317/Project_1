@@ -1,0 +1,84 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width-device-width, initial-scale-1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <title>document</title>
+   <link rel="stylesheet" type="text/css" href="navbarr.css">
+</head>
+<body>
+
+
+   <div class="container">
+     <canvas id="myChart"></canvas>
+	</div>
+
+
+	<script>
+	  let myChart = document.getElementById('myChart').getContext('2d');
+
+    let massPopChart = new Chart(myChart, {
+      type:'pie',
+      data:{
+        labels:['Road Deaths','Self Harm','Interpersonal Violence','Maternal Condition','HIV/AID','Lower Respiratory Infection','Diarrehoeal Diseases','Tuberculosis','Drowning','Collecting Violence And Legal Intervention'],
+        datasets:[{
+          
+          data:[
+           353.3,
+           220.8,
+           187.6,
+           155.1,
+           134.1,
+           100.1,
+           90.2,
+           87.0,
+           66.0,
+           63.8
+         ],
+         //backgroundColor:'green',
+         backgroundColor:[
+           'rgba(255,99,132,0.6)',
+           'rgba(54,162,235,0.6)',
+           'rgba(255,206,86,0.6)',
+           'rgba(75,192,192,0.6)',
+           'rgba(153,102,255,0.6)',
+           'rgba(255,159,64,0.6)',
+           'rgba(255,99,132,0.6)',
+           'rgba(255,102,132,0.6)',
+           'rgba(255,206,132,0.6)',
+           'rgba(75,99,132,0.6)',
+         ]
+        }]
+      },
+      options:{
+        title:{
+          display:true,
+          text:'TOP 10 CAUSES OF DEATH FOR YOUTH GLOBALLY',
+          fontSize:28
+        },
+        legend:{
+          display:true,
+          position:'right',
+          labels:{
+            fontColor:'black'
+          }
+        },
+        layout:{
+          padding:{
+            left:50,
+            right:0,
+            bottom:0,
+            top:0
+          }
+        },
+        tooltips:{
+          display:false
+        }
+      }
+    });
+	</script>
+
+</body>
+</html>

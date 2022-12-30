@@ -1,0 +1,654 @@
+<html>
+<head>
+  <style>
+.feed-container .content .item{border-bottom:1px dashed #CCC;}
+</style>
+
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="news2.js"></script>
+<link rel="stylesheet" href="news1.css">
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h3> MENU</h3>
+            <strong>M</strong>
+        </div>
+
+        <ul class="list-unstyled components">
+            <li class="active">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="fas fa-home"></i>
+                    News
+                </a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                      <a href="#RAsubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                          <i class="fas fa-home"></i>
+                          <b>Road Accidents</b>
+
+                      </a>
+                        <ul class="collapse list-unstyled" id="RAsubmenu">
+                          <li>
+                            <a href="#3"> International Road Accidents  </a>
+                          </li>
+                          <li>
+                            <a href="#2"> National Road Accidents</a>
+                          </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#RAsubmenu1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                          <i class="fas fa-home"></i>
+                          <b>Campaigns</b>
+                      </a>
+                      <ul class="collapse list-unstyled" id="RAsubmenu1">
+                          <li>
+                            <a href="#5.1"> International Campaigns</a>
+                          </li>
+                          <li>
+                            <a href="#4"> National Campaigns</a>
+                          </li>
+                      </ul>
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="#6">
+                    <i class="fas fa-briefcase"></i>
+                    Videos
+                </a>
+                <a href="#7">
+                    <i class="fas fa-copy"></i>
+                  Blogs
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid" style="width:100%;">
+
+                <button type="button" id="sidebarCollapse" class="btn btn-info">
+                    <i class="fas fa-align-left"></i>
+                    <span>News&Blogs</span>
+                </button>
+            </div>
+        </nav>
+<div id="1" style=" font-size:1vw;">
+  <div>
+<img src="mm.jpg" class="mx-auto d-block" style="height:50%; width:100%">
+</div>
+  <div class="card mb-3" >
+    <div class="row no-gutters">
+      <div class="col-md-4" >
+        <img src="yy.jpg" class="card-img" style="height:40vh">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h3 class="card-title"><b>Road Accidents</b></h3>
+          <p class="card-text">Road accident is most unwanted thing to happen to a road user, though they happen quite often. The most unfortunate thing is that we don't learn from our mistakes on road. Most of the road users are quite well aware of the general rules and safety measures while using roads but it is only the laxity on part of road users, which cause accidents and crashes.</p>
+          <p>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+              GO
+            </a>
+  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    GO
+  </a>
+</p>
+<div class="row">
+  <div class="col">
+        <div class=" collapse multi-collapse card  bg-light mb-3" id="collapseExample1">
+          <div class="card-header">National Road Accidents</div>
+          <div class="card-body">
+            <p class="card-text"> The NCRB 2016 report states there were 496,762 roads and railways related traffic collisions in 2015. Of these, 464,674 road collisions caused 148,707 traffic-related deaths in India.</p>
+          </div>
+        </div>
+    </div>
+
+  <div class="col">
+    <div class=" collapse multi-collapse card bg-light mb-3" id="collapseExample">
+      <div class="card-header">International Road Accidents</div>
+      <div class="card-body">
+        <p class="card-text" >According to the WHO, road traffic injuries caused an estimated 1.35 million deaths worldwide in the year 2016. That is, one person is killed every 25 seconds.  </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!--National News-->
+  <div id="2" style=" font-size:1vw;">
+  <h2> <b>National Road Accidents</b></h2>
+  <div class="e" style="margin-bottom:2vw;">
+  <div class="r card" style="width: 25%; height:20rem; float:left;">
+  <img src="11.jpg" class="card-img-top" style="height:24vh" >
+  <div class="card-body">
+    <p class="card-text"> Indian rescue workers examine the scene of an accident on the Mumbai-Pune expressway.</p>
+  </div>
+</div>
+<div class="r card" style="width: 25%; height:20rem;float:left;">
+<img src="NR2.jpg" class="card-img-top" style="height:24vh">
+<div class="card-body">
+  <p class="card-text">Three killed in road accident in Karnal.</p>
+</div>
+</div>
+<div class="r card" style="width: 25%; height:20rem; float:left;">
+<img src="NR1.jpg" class="card-img-top" style="height:24vh">
+<div class="card-body">
+  <p class="card-text">Vadodara: Nine killed in road accident on National Highway-8.</p>
+</div>
+</div>
+<div class="r card" style="width: 25%; height:20rem; float:left;">
+<img src="NR3.jpg" class="card-img-top" style="height:24vh">
+<div class="card-body">
+  <p class="card-text">According to the NRSC accident statistics, about 80 per cent of road accidents are caused by human errors.</p>
+</div>
+</div>
+</div>
+<div class="examp z-depth-4 text-justify p-3 bg-light text-dark">
+<p><br> <br> India has one of the largest road networks in the world with about 47 lakh km of road length. This road length includes National Highways (NHs), Expressways, State Highways (SHs), district roads, PWD roads, and project roads.  In India, road infrastructure is used to transport over 60% of total goods and 85% of total passenger traffic.
+
+The Ministry of Road Transport and Highways formulates and administers policies for road transport, and transport research.  It is also involved with the construction and maintenance of the National Highways (NHs).  It also deals with matters relating to road transport such as implementation of the primary central legislation, the Motor Vehicles Act, 1988.
+In 2015, there were about five lakh road accidents in India, which killed about 1.5 lakh people and injured about five lakh people.  India, as a signatory to the Brasilia declaration, intends to reduce road accidents and traffic fatalities by 50% by 2022.  The Motor Vehicles (Amendment) Bill, 2016 has been listed for consideration and passage in the current Budget Session of Parliament.  It seeks to address issues related to road accidents, third party insurance and road safety measures.
+The World Health Organization has noted that road accidents are a major public health problem as crashes kill more than 1.25 million people and injure about 50 million people a year, with 90% of such casualties occurring in developing countries.</p>
+</div>
+
+<div class="rajshree2"style="width:40%; height:26vw;float:left; text-align:center; font-size:4vw; font-family:Cooper Black; padding-top:30;background:#BDA0CB;" ><br>What are the Current News?</div>
+
+<div style="width:60%; height:26vw; font-size:1.5vw; float:left;" class=" rajshree2 shadow-lg p-3 mb-5 bg-white rounded">
+
+
+<!-- start sw-rss-feed code -->
+<script type="text/javascript">
+<!--
+rssfeed_url = new Array();
+rssfeed_url[0]="https://www.google.com/alerts/feeds/08576982946395614478/4101644253927950433";
+rssfeed_frame_width="550";
+rssfeed_frame_height="300";
+rssfeed_scroll="on";
+rssfeed_scroll_step="6";
+rssfeed_scroll_bar="off";
+rssfeed_target="_blank";
+rssfeed_font_size="12";
+rssfeed_font_face="";
+rssfeed_border="on";
+rssfeed_css_url="https://feed.surfing-waves.com/css/style4.css";
+rssfeed_title="on";
+rssfeed_title_name="";
+rssfeed_title_bgcolor="#3366ff";
+rssfeed_title_color="#fff";
+rssfeed_title_bgimage="";
+rssfeed_footer="off";
+rssfeed_footer_name="rss feed";
+rssfeed_footer_bgcolor="#fff";
+rssfeed_footer_color="#333";
+rssfeed_footer_bgimage="";
+rssfeed_item_title_length="50";
+rssfeed_item_title_color="#666";
+rssfeed_item_bgcolor="#fff";
+rssfeed_item_bgimage="";
+rssfeed_item_border_bottom="on";
+rssfeed_item_source_icon="off";
+rssfeed_item_date="off";
+rssfeed_item_description="on";
+rssfeed_item_description_length="120";
+rssfeed_item_description_color="#666";
+rssfeed_item_description_link_color="#333";
+rssfeed_item_description_tag="off";
+rssfeed_no_items="0";
+rssfeed_cache = "13c75c004b8d4d3bb591580f2c0a5460";
+//-->
+</script>
+<script type="text/javascript" src="https://feed.surfing-waves.com/js/rss-feed.js"></script>
+<!-- The link below helps keep this service FREE, and helps other people find the SW widget. Please be cool and keep it! Thanks. -->
+<!-- end sw-rss-feed code -->
+<script type="text/javascript" src=""></script>
+</div>
+
+
+</div>
+<!--International news-->
+
+<div id="3" style=" font-size:1vw;">
+<h2> <b>International Road Accidents </b></h2>
+<div class="e" style="margin-bottom:2vw;">
+<div class="r card" style="width: 25%; height:20rem; float:left;">
+<img src="IR1.jpg" class="card-img-top" style="height:24vh" >
+<div class="card-body">
+  <p class="card-text">Number of road traffic deaths in Ukraine is shocking
+</p>
+</div>
+</div>
+<div class="r card" style="width: 25%; height:20rem;float:left;">
+<img src="IR2.jpg" class="card-img-top" style="height:24vh">
+<div class="card-body">
+<p class="card-text">Intersection Accident in the KI Islander.</p>
+</div>
+</div>
+<div class="r card" style="width: 25%; height:20rem; float:left;">
+<img src="IR3.jpg" class="card-img-top" style="height:24vh">
+<div class="card-body">
+<p class="card-text">Road Accident in Mauritius.</p></div>
+</div>
+<div class="r card" style="width: 25%; height:20rem; float:left;">
+<img src="IR4.jpg" class="card-img-top" style="height:24vh">
+<div class="card-body">
+<p class="card-text">Five killed and 32 injured in HK crash.</p>
+
+</div>
+</div>
+</div>
+<br>
+<div class="examp z-depth-4 text-justify p-3 bg-light text-dark" style="padding-top:10;">
+<p><br> <br> According to the World Health Organization, road traffic injuries caused an estimated 1.35 million deaths worldwide in the year 2016. That is, one person is killed every 25 seconds. Over a third of road traffic deaths in low- and middle-income countries are among pedestrians and cyclists. However, less than 35 percent of low- and middle-income countries have policies in place to protect these road users. Seventy-four percent of road traffic deaths occur in middle-income countries, which account for only 53 percent of the world's registered vehicles. In low-income countries it is even worse.</p>
+</div>
+<br>
+<div style="width:60%; height:26vw; font-size:0.9vw; float:left;" class=" rajshree3  p-3 bg-white ">
+<ul>
+  <li>Nearly 1.25 million people die in road crashes each year, on average 3,287 deaths a day.</li>
+  <li>An additional 20-50 million are injured or disabled.</li>
+  <li>More than half of all road traffic deaths occur among young adults ages 15-44.</li>
+  <li>Road traffic crashes rank as the 9th leading cause of death and account for 2.2% of all deaths globally.</li>
+  <li>Road crashes are the leading cause of death among young people ages 15-29, and the second leading cause of death worldwide among young people ages 5-14.</li>
+  <li>Each year nearly 400,000 people under 25 die on the world’s roads, on average over 1,000 a day.</li>
+  <li>Over 90% of all road fatalities occur in low and middle-income countries, which have less than half of the world’s vehicles.</li>
+  <li>Road crashes cost USD $518 billion globally, costing individual countries from 1-2% of their annual GDP.</li>
+  <li>Road crashes cost low and middle-income countries USD $65 billion annually, exceeding the total amount received in developmental assistance.</li>
+  <li>Unless action is taken, road traffic injuries are predicted to become the fifth leading cause of death by 2030.</li>
+</ul>
+</div>
+<div class="rajshree3"style="width:40%; height:26vw;float:left; text-align:center; font-size:4vw; font-family:Cooper Black; padding-top:30;background:#BDA0CB;" >Annual Global Road Crash Statistics</div>
+
+<div class="rajshree2"style="width:40%; height:26vw;float:left; text-align:center; font-size:4vw; font-family:Cooper Black; padding-top:30;background:#BDA0CB;" ><br>What are the Current News?</div>
+
+<div style="width:60%; height:26vw; font-size:1.5vw; float:left;" class=" rajshree2 shadow-lg p-3 mb-5 bg-white rounded">
+
+
+  <!-- start sw-rss-feed code -->
+  <script type="text/javascript">
+  <!--
+  rssfeed_url = new Array();
+  rssfeed_url[0]="https://www.google.com/alerts/feeds/08576982946395614478/15157418365607251728";
+  rssfeed_frame_width=auto;
+  rssfeed_frame_height=auto;
+  rssfeed_scroll="on";
+  rssfeed_scroll_step="6";
+  rssfeed_scroll_bar="off";
+  rssfeed_target="_blank";
+  rssfeed_font_size="12";
+  rssfeed_font_face="";
+  rssfeed_border="on";
+  rssfeed_css_url="https://feed.surfing-waves.com/css/style4.css";
+  rssfeed_title="on";
+  rssfeed_title_name="";
+  rssfeed_title_bgcolor="#3366ff";
+  rssfeed_title_color="#fff";
+  rssfeed_title_bgimage="";
+  rssfeed_footer="off";
+  rssfeed_footer_name="rss feed";
+  rssfeed_footer_bgcolor="#fff";
+  rssfeed_footer_color="#333";
+  rssfeed_footer_bgimage="";
+  rssfeed_item_title_length="50";
+  rssfeed_item_title_color="#666";
+  rssfeed_item_bgcolor="#fff";
+  rssfeed_item_bgimage="";
+  rssfeed_item_border_bottom="on";
+  rssfeed_item_source_icon="off";
+  rssfeed_item_date="off";
+  rssfeed_item_description="on";
+  rssfeed_item_description_length="120";
+  rssfeed_item_description_color="#666";
+  rssfeed_item_description_link_color="#333";
+  rssfeed_item_description_tag="off";
+  rssfeed_no_items="0";
+  rssfeed_cache = "7ae9648d24a3f08d755bd97c8c29adf6";
+  //-->
+  </script>
+  <script type="text/javascript" src="https://feed.surfing-waves.com/js/rss-feed.js"></script>
+</div>
+
+</div>
+<div id="4" style=" font-size:1vw;">
+  <h2> <br><br><b>National Campaigns</b></h2>
+  <div class="e" style="margin-bottom:2vw;">
+  <div class="r card" style="width: 25%; height:20rem; float:left;">
+  <img src="NC5.jpg" class="card-img-top" style="height:24vh" >
+  <div class="card-body">
+    <p class="card-text"> Noida traffic police made a record by collecting fine of Rs.2.38 lakh from 2,193 traffic rule violators.</p>
+  </div>
+  </div>
+  <div class="r card" style="width: 25%; height:20rem;float:left;">
+  <img src="NC3.jpg" class="card-img-top" style="height:24vh">
+  <div class="card-body">
+  <p class="card-text">Radio City has launched #MeraGhaata, a campaign to create awareness about traffic rules.</p>
+  </div>
+  </div>
+  <div class="r card" style="width: 25%; height:20rem; float:left;">
+  <img src="NC2.jpg" class="card-img-top" style="height:24vh">
+  <div class="card-body">
+  <p class="card-text">National Road Safety Council soon to take shape.</p>
+  </div>
+  </div>
+  <div class="r card" style="width: 25%; height:20rem; float:left;">
+  <img src="NC1.jpg" class="card-img-top" style="height:24vh">
+  <div class="card-body">National Road Safety Campaign hosted by Ministry of Civil Service and Administrative Reforms.</p>
+  </div>
+  </div>
+  </div>
+  <div class="examp z-depth-4 text-justify p-3 bg-light text-dark">
+<p>Road safety campaigns have not been able to bring about a change in behaviour and reduce the number of deaths and injuries suffered due to road accidents in India, which is the highest in the world in a year.
+One such Initiative is INA. Indian Road Safety Campaign, is the road safety initiative of Solve, a trust started by the students and alumni of IIT Delhi to solve the problems plaguing the society on the ground level. IRSC (Solve) is the largest youth led organisation working towards the mission of making Indian Roads Safer, focusing on reducing the number of deaths caused by road accidents across India by half till 2020. We are currently active in 50+ cities with over 1700+ volunteers and have impacted more than 1 crore people in across 10 states in India. </p>
+  </div>
+
+  <div class="rajshree2"style="width:40%; height:26vw;float:left; text-align:center; font-size:4vw; font-family:Cooper Black; padding-top:30;background:#BDA0CB;" ><br>What are the Current News?</div>
+
+  <div style="width:60%; height:26vw; font-size:1.5vw; float:left;" class=" rajshree2 shadow-lg p-3 mb-5 bg-white rounded">
+
+
+    <!-- start sw-rss-feed code -->
+  <script type="text/javascript">
+  <!--
+  rssfeed_url = new Array();
+  rssfeed_url[0]="https://www.google.com/alerts/feeds/08576982946395614478/8603354357719385283";
+  rssfeed_frame_width=auto;
+  rssfeed_frame_height=auto;
+  rssfeed_scroll="on";
+  rssfeed_scroll_step="6";
+  rssfeed_scroll_bar="off";
+  rssfeed_target="_blank";
+  rssfeed_font_size="12";
+  rssfeed_font_face="";
+  rssfeed_border="on";
+  rssfeed_css_url="https://feed.surfing-waves.com/css/style4.css";
+  rssfeed_title="on";
+  rssfeed_title_name="";
+  rssfeed_title_bgcolor="#3366ff";
+  rssfeed_title_color="#fff";
+  rssfeed_title_bgimage="";
+  rssfeed_footer="off";
+  rssfeed_footer_name="rss feed";
+  rssfeed_footer_bgcolor="#fff";
+  rssfeed_footer_color="#333";
+  rssfeed_footer_bgimage="";
+  rssfeed_item_title_length="50";
+  rssfeed_item_title_color="#666";
+  rssfeed_item_bgcolor="#fff";
+  rssfeed_item_bgimage="";
+  rssfeed_item_border_bottom="on";
+  rssfeed_item_source_icon="off";
+  rssfeed_item_date="off";
+  rssfeed_item_description="on";
+  rssfeed_item_description_length="120";
+  rssfeed_item_description_color="#666";
+  rssfeed_item_description_link_color="#333";
+  rssfeed_item_description_tag="off";
+  rssfeed_no_items="0";
+  rssfeed_cache = "b402067952c6b537ef33a70d1eb724cb";
+  //-->
+  </script>
+  <script type="text/javascript" src="https://feed.surfing-waves.com/js/rss-feed.js"></script>
+</div>
+</div>
+
+<div id="5" style=" font-size:1vw;">
+  <h2> <b>International Campaigns</b></h2>
+  <div  id="5.1" class="e" style="margin-bottom:2vw;">
+  <div class="r card" style="width: 25%; height:20rem; float:left;">
+  <img src="IC2.jpg" class="card-img-top" style="height:24vh" >
+  <div class="card-body">
+    <p class="card-text"> International Road Safety Campaign to launch in Ireland.</p>
+  </div>
+  </div>
+  <div class="r card" style="width: 25%; height:20rem;float:left;">
+  <img src="IC1.jpg" class="card-img-top" style="height:24vh">
+  <div class="card-body">
+  <p class="card-text">DriveTech commends AA Charitable Trust’s International Road Safety Award win.</p>
+  </div>
+  </div>
+  <div class="r card" style="width: 25%; height:20rem; float:left;">
+  <img src="IC4.jpg" class="card-img-top" style="height:24vh">
+  <div class="card-body">
+  <p class="card-text">World Health Organization: The First Global Pedestrian Safety Campaign: Make Walking Safe.</p>
+  </div>
+  </div>
+  <div class="r card" style="width: 25%; height:20rem; float:left;">
+  <img src="IC3.jpg" class="card-img-top" style="height:24vh">
+  <div class="card-body">
+  <p class="card-text">UN Global Road Safety Week is a biennial global road safety campaign hosted by WHO.</p>
+  </div>
+  </div>
+  </div>
+  <div class="examp z-depth-4 text-justify p-3 bg-light text-dark">
+<p>Worldwide more than 1.2 million people die as a result of a road traffic crash each year, and as many as 50 million are injured. Most of these tragedies can be prevented. Avoiding speeding, drinking and driving and distracted driving, and using motorcycle helmets, seat-belts, and child restraints are key to saving lives. Such actions can be promoted through the development of comprehensive road safety legislation and rigorous enforcement.
+
+To increase public awareness of road safety laws and persuade the public to abide by them, governments complement legislation and enforcement with the broadcasting of mass media campaigns. This library offers a selection of road safety mass media campaigns to encourage and inspire those developing such campaigns.
+</p>
+
+  </div>
+
+  <div class="rajshree2"style="width:40%; height:26vw;float:left; text-align:center; font-size:4vw; font-family:Cooper Black; padding-top:30;background:#BDA0CB;" ><br>What are the Current News?</div>
+
+  <div style="width:60%; height:26vw; font-size:1.5vw; float:left;" class=" rajshree2 shadow-lg p-3 mb-5 bg-white rounded">
+    <!-- start sw-rss-feed code -->
+    <script type="text/javascript">
+    <!--
+    rssfeed_url = new Array();
+    rssfeed_url[0]="https://www.google.com/alerts/feeds/08576982946395614478/16796653075160114623";
+    rssfeed_frame_width=auto;
+    rssfeed_frame_height=auto;
+    rssfeed_scroll="on";
+    rssfeed_scroll_step="6";
+    rssfeed_scroll_bar="off";
+    rssfeed_target="_blank";
+    rssfeed_font_size="12";
+    rssfeed_font_face="";
+    rssfeed_border="on";
+    rssfeed_css_url="https://feed.surfing-waves.com/css/style4.css";
+    rssfeed_title="on";
+    rssfeed_title_name="";
+    rssfeed_title_bgcolor="#3366ff";
+    rssfeed_title_color="#fff";
+    rssfeed_title_bgimage="";
+    rssfeed_footer="off";
+    rssfeed_footer_name="rss feed";
+    rssfeed_footer_bgcolor="#fff";
+    rssfeed_footer_color="#333";
+    rssfeed_footer_bgimage="";
+    rssfeed_item_title_length="50";
+    rssfeed_item_title_color="#666";
+    rssfeed_item_bgcolor="#fff";
+    rssfeed_item_bgimage="";
+    rssfeed_item_border_bottom="on";
+    rssfeed_item_source_icon="off";
+    rssfeed_item_date="off";
+    rssfeed_item_description="on";
+    rssfeed_item_description_length="120";
+    rssfeed_item_description_color="#666";
+    rssfeed_item_description_link_color="#333";
+    rssfeed_item_description_tag="off";
+    rssfeed_no_items="0";
+    rssfeed_cache = "fff7af4c3cce8b55a5ad447d03f61ebb";
+    //-->
+    </script>
+    <script type="text/javascript" src="https://feed.surfing-waves.com/js/rss-feed.js"></script>
+
+</div>
+
+</div>
+
+
+
+
+<div id="7" style=" font-size:1vw;">
+  <h2> <b>BLOGS</b></h2>
+  <div  id="5.1" class="e" style="margin-bottom:2vw;">
+  <div class="r card" style="width: 25%; height:20rem; float:left;">
+  <img src="blog_3.png" class="card-img-top" style="height:24vh" >
+  <div class="card-body">
+    <p class="card-text"> GRSP South Africa and Michelin officially handed over the project to the Limpopo Department of Transport (DoT).</p>
+  </div>
+  </div>
+  <div class="r card" style="width: 25%; height:20rem;float:left;">
+  <img src="blog_2.png" class="card-img-top" style="height:24vh">
+  <div class="card-body">
+  <p class="card-text">Commonwealth Road Safety Initiative officially launches in London
+</p>
+  </div>
+  </div>
+  <div class="r card" style="width: 25%; height:20rem; float:left;">
+  <img src="blog_3.png" class="card-img-top" style="height:24vh">
+  <div class="card-body">
+  <p class="card-text">The Fifth UN Global Road Safety Week kicks off on 6th May 2019 - take part!</p>
+  </div>
+  </div>
+  <div class="r card" style="width: 25%; height:20rem; float:left;">
+  <img src="blog_4.png" class="card-img-top" style="height:24vh">
+  <div class="card-body">
+  <p class="card-text">NGOs call for life-saving commitment to reduce road deaths and injuries.</p>
+  </div>
+  </div>
+  </div>
+  <div class="examp z-depth-4 text-justify p-3 bg-light text-dark">
+<p>According to the World Health Organization, every year, approximately 1,350,000 people die on the roads around the world.  (Close to 40,000 of those fatalities occur on U.S. roads)
+
+Assuming a conservative estimate of 1,000,000 deaths on the world’s roads each year since 1960, this would mean almost 60,000,000 people have died on our roads in the past 60 years, making Road Carnage statistically
+the second worst epidemic in history, surpassing the Black Plague!  In addition, another 20 to 50 million people are seriously injured each year on our roads.
+</p>
+
+  </div>
+
+  <div class="rajshree2"style="width:40%; height:26vw;float:left; text-align:center; font-size:4vw; font-family:Cooper Black; padding-top:30;background:#BDA0CB;" ><br>What are the Current News?</div>
+
+  <div style="width:60%; height:26vw; font-size:1.5vw; float:left;" class=" rajshree2 shadow-lg p-3 mb-5 bg-white rounded">
+    <!-- start sw-rss-feed code -->
+    <script type="text/javascript">
+    <!--
+    rssfeed_url = new Array();
+    rssfeed_url[0]="https://www.google.com/alerts/feeds/08576982946395614478/16796653075160114623";
+    rssfeed_frame_width=auto;
+    rssfeed_frame_height=auto;
+    rssfeed_scroll="on";
+    rssfeed_scroll_step="6";
+    rssfeed_scroll_bar="off";
+    rssfeed_target="_blank";
+    rssfeed_font_size="12";
+    rssfeed_font_face="";
+    rssfeed_border="on";
+    rssfeed_css_url="https://feed.surfing-waves.com/css/style4.css";
+    rssfeed_title="on";
+    rssfeed_title_name="";
+    rssfeed_title_bgcolor="#3366ff";
+    rssfeed_title_color="#fff";
+    rssfeed_title_bgimage="";
+    rssfeed_footer="off";
+    rssfeed_footer_name="rss feed";
+    rssfeed_footer_bgcolor="#fff";
+    rssfeed_footer_color="#333";
+    rssfeed_footer_bgimage="";
+    rssfeed_item_title_length="50";
+    rssfeed_item_title_color="#666";
+    rssfeed_item_bgcolor="#fff";
+    rssfeed_item_bgimage="";
+    rssfeed_item_border_bottom="on";
+    rssfeed_item_source_icon="off";
+    rssfeed_item_date="off";
+    rssfeed_item_description="on";
+    rssfeed_item_description_length="120";
+    rssfeed_item_description_color="#666";
+    rssfeed_item_description_link_color="#333";
+    rssfeed_item_description_tag="off";
+    rssfeed_no_items="0";
+    rssfeed_cache = "fff7af4c3cce8b55a5ad447d03f61ebb";
+    //-->
+    </script>
+    <script type="text/javascript" src="https://feed.surfing-waves.com/js/rss-feed.js"></script>
+
+</div>
+
+</div>
+
+
+
+
+
+<div id="6" style="width:100%;">
+  <div class="container ">
+    <div class="row">
+        <div class="col-sm-12">
+<div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/CBT8ujU5DTY" ></iframe>          </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <div style="width:100%; font-size:2vw; font-family:Algerian ; color:black; padding-top:30; ">Campaign And Road Accident!</div><br>
+
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/3KcvMLEYF1w" ></iframe>          </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/o9_tRbUKMmM"></iframe>         </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="embed-responsive embed-responsive-16by9">
+<iframe  class="embed-responsive-item" <iframe width="853" height="480" src="https://www.youtube.com/embed/KdwUd9p1qIA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> ></iframe>    </div>
+
+        </div>
+
+    </div>
+
+<br>
+
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qr-Xp4YyPac"></iframe>          </div>
+        </div>
+        <div class="col-sm-4">
+
+<iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/V9AFfjesOb4" ></iframe> <br><br>
+
+
+
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Kgvd7421Z3Q" ></iframe>
+
+
+        </div>
+    </div>
+
+
+
+
+</div>
+  </div>
+
+
+
+
+
+</body>
+</html>

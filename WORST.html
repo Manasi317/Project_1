@@ -1,0 +1,57 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width-device-width, initial-scale-1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <title>document</title>
+</head>
+<body>
+   <div class="container">
+     <canvas id="myChart"></canvas>
+	</div>
+
+
+	<script>
+	  let myChart = document.getElementById('myChart').getContext('2d');
+
+    let massPopChart = new Chart(myChart, {
+      type:'bar',
+      data:{
+
+        labels:['Venezuela','Togo','Mozambique','Guinea-Bissae','Democratic Republic o...','Central African Republic','Liberia','MAlawi','Gambia','Madagascar'],
+        datasets:[{
+          label:'Death per 100,000',
+          data:[
+           70.7,
+           47.0,
+           44.0,
+           43.0,
+           42.0,
+           38.4,
+           37.5,
+           36.8,
+           36.4,
+           37.5
+         ],
+         backgroundColor:'Purple'
+        }]
+      },
+      options:{
+        title:{
+          display:true,
+          text:'WORST 10 PERFORMING COUNTRIES FOR YOUTH MORTALITY',
+          fontSize:28
+        },
+        legend:{
+          position:'right',
+          labels:{
+            fontColor:'black'
+          }
+        }
+      }
+    });
+	</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width-device-width, initial-scale-1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <title>document</title>
+  <link rel="stylesheet" type="text/css" href="navbarr.css">
+</head>
+<body>
+
+   <div class="container">
+     <canvas id="myChart"></canvas>
+	</div>
+
+
+	<script>
+	  let myChart = document.getElementById('myChart').getContext('2d');
+
+    let massPopChart = new Chart(myChart, {
+      type:'line',
+      data:{
+
+         labels:['0-4 years','5-14 years','15-29 years','30-49 years','50-59 years','60-69 years','70+ years'],
+         datasets:[{
+           label:'population',
+           data:[
+            72500,
+            69600,
+            352700,
+            399500,
+            170600,
+            135200,
+            139100
+          ],
+         backgroundColor:'blue'
+        }]
+      },
+      options:{
+        title:{
+          display:true,
+          text:'DISTRIBUTION OF ROAD DEATHS AMONG AGE GROUPS',
+          fontSize:20
+        },
+        legend:{
+          position:'right',
+          labels:{
+            fontColor:'black'
+          }
+        }
+      }
+    });
+	</script>
+
+</body>
+</html>

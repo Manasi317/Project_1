@@ -1,0 +1,199 @@
+<?php
+session_start();
+if ($_SESSION['u_type'] == "NU");
+{
+?>
+
+<html>
+    <head>
+	
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	
+	<style>
+	body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+	
+	.caption {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+	
+	.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+.parallax {
+  /* The image used */
+  background-image: url("road_road.jpg");
+
+  /* Set a specific height */
+  min-height: 700px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax1 {
+  /* The image used */
+  background-image: url("slow.png");
+
+  /* Set a specific height */
+  min-height: 700px; 
+  opacity: 0.65;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
+
+    <body>
+        
+    <div class="parallax"></div>
+  <div id="hid" class="centered" style="width:100%; text-align:center; font-size:4VW; font-family:Cooper Black; padding-top:30; "></div><br>
+</div> 
+
+<br><br>
+
+  <div class="card-group align-center " style="width:100%; padding-left: 10%; padding-right: 10%">
+  <div class="card">
+    <img src="drink_drink.png" class="card-img-top" height="70%" >
+    <div class="card-body">
+      <h5 class="card-title align-middle text-light bg-info text-center">DON'T DRINK AND DRIVE</h5>
+      <p class="card-text">No one wants to see you black & blue or dead, So how about letting a sober friend drive instead.</p>
+      <a href="drink_drink.png" download>
+      <button class="btn"><i class="fa fa-download"></i> Download</button></a>
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="drive_drive.png" class="card-img-top" height="70%" alt="...">
+    <div class="card-body">
+      <h5 class="card-title align-middle text-light bg-info text-center">LOOK TWICE</h5>
+      <p class="card-text"> Look twice because someone is waithing for them also. <br><br></p>
+      <a href="drive_drive.png" download>
+      <button class="btn"><i class="fa fa-download"></i> Download</button></a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="poster.jpg" class="card-img-top" height="70%" alt="...">
+    <div class="card-body">
+      <h5 class="card-title align-middle text-light bg-info text-center">DISTRACTED-DRIVING</h5>
+      <p class="card-text">It takes 3 seconds to view a text, and for a child to step into the road. <br> <br></p>
+      <a href="poster.jpg" download>
+      <button class="btn"><i class="fa fa-download"></i> Download</button></a>
+    </div>
+  </div>
+</div>
+  <div class="card-group align-center" style="width:100% ; padding-left: 10%; padding-right: 10%"; ">
+  <div class="card">
+    <img src="zero.jpg" class="card-img-top" height="70%"  alt="...">
+    <div class="card-body">
+      <h5 class="card-title align-middle text-light bg-info text-center">ZERO ACCIDENT</h5>
+      <p class="card-text"> Zero accident requires 100% commitment to safety.<br></p>
+      <a href="zero.jpg" download>
+      <button class="btn"><i class="fa fa-download"></i> Download</button></a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="safe.jpg" class="card-img-top" height="70%" alt="...">
+    <div class="card-body">
+      <h5 class="card-title align-middle text-light bg-info text-center">STAY SAFE</h5>
+      <p class="card-text">Best way is to stop and then listen and look at the traffic and then take a step.  <br> <br></p>
+      <a href="safe.jpg" download>
+      <button class="btn"><i class="fa fa-download"></i> Download</button></a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="seat_seat.png" class="card-img-top" height="70%" alt="...">
+    <div class="card-body">
+      <h5 class="card-title align-middle text-light bg-info text-center">SEATBELT</h5>
+      <p class="card-text">Wear a seatbelt or its the best way to go to heaven.  <br> <br></p>
+      <a href="seat_seat.png" download>
+      <button class="btn"><i class="fa fa-download"></i> Download</button></a>
+    </div>
+  </div>
+</div>
+
+
+<script>
+            
+            var i = 1;
+            function func()
+            {
+                var message = "DOWNLOAD THE ROAD SAFETY POSTER";
+                if( i <= message.length )
+                {
+                    
+                    var txt = message.substring(0,i);
+                    document.getElementById("hid").innerHTML = txt;
+                    document.getElementById("hid").style.color = "BLACK";
+                    
+                    
+                    setTimeout("func()",200);
+                    i++;
+                }
+                
+                else{
+                    
+                    i = 1;
+                    document.getElementById("hid").innerHTML = "";
+                    setTimeout("func()",1000);
+                }
+            }
+            
+            func();
+
+        </script>
+        
+    </body>
+</html>
+<?php
+}
+else{
+    header("location:our_hackathon.php"); // redirect to login page!
+}
+?>
+

@@ -1,0 +1,54 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width-device-width, initial-scale-1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <title>document</title>
+  <link rel="stylesheet" type="text/css" href="navbarr.css">
+</head>
+<body>
+
+
+   <div class="container">
+     <canvas id="myChart"></canvas>
+	</div>
+
+
+	<script>
+	  let myChart = document.getElementById('myChart').getContext('2d');
+
+    let massPopChart = new Chart(myChart, {
+      type:'doughnut',
+      data:{
+
+         labels:['Male','Female'],
+         datasets:[{
+           label:'population',
+           data:[
+            79,
+            21
+          ],
+         backgroundColor:['orange','powderblue'
+        ]
+        }]
+      },
+      options:{
+        title:{
+          display:true,
+          text:'DISTRIBUTION OF ROAD DEATHS BY GENDER',
+          fontSize:20
+        },
+        legend:{
+          position:'right',
+          labels:{
+            fontColor:'black'
+          }
+        }
+      }
+    });
+	</script>
+
+</body>
+</html>
